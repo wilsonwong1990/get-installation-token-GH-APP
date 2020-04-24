@@ -22,4 +22,6 @@ Make sure the scripts are executable and run:
 ./get-installation-token.sh
 ```
 
+Follow the prompts, and enter the path to the private key and the installation id when asked.
+
 
