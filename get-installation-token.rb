@@ -27,10 +27,9 @@ payload = {
 }
 
 jwt = JWT.encode(payload, private_key, "RS256")
-puts jwt
 
 uri = URI.parse("https://api.github.com/app/installations/#{installation_id}/access_tokens")
-puts uri
+
 request = Net::HTTP::Post.new(uri)
 request["Authorization"] = "Bearer #{jwt}"
 request["Accept"] = "application/vnd.github.machine-man-preview+json"
