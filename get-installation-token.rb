@@ -9,7 +9,11 @@ puts "Where is the GitHub App certificate? (.pem format)"
 pem_path = gets.chomp
 
 puts "What is the installation id?"
-installation_id = gets.chomp
+installation_id = gets.chomp 
+
+puts "What is the app identifier id?"
+iss = gets.chomp
+
 
 # Private key contents
 pem = File.read("#{pem_path}")
@@ -23,7 +27,7 @@ payload = {
   # JWT expiration time (10 minute maximum)
   exp: Time.now.to_i + (10 * 60),
   # GitHub App's identifier
-  iss: 61967
+  iss: iss
 }
 
 jwt = JWT.encode(payload, private_key, "RS256")
