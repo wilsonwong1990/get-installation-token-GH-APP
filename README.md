@@ -1,6 +1,6 @@
 ## get-installation-token-GH-APP
 
-A script to get the installation token from a [GitHub App](https://developer.github.com/v3/apps/) 
+A script to get the installation token from a [GitHub App](https://docs.github.com/en/free-pro-team@latest/developers/apps/creating-a-github-app) 
 
 [Instructions to create a GitHub App](https://developer.github.com/apps/building-github-apps/creating-a-github-app/)
 
