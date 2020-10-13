@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 require 'openssl'
 require 'jwt'  # https://rubygems.org/gems/jwt
