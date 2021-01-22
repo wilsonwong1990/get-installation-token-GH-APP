@@ -33,6 +33,8 @@ Follow the prompts, and enter the path to the private key and the installation i
 * net/http
 * uri
 
+```
 Just run ./get-installation-token.rb
+```
 
 Follow the prompts and enter the path to the private key and enter the installation id when asked.
